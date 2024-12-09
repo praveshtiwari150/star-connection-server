@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist/index.js",
+    "start": "nodemon src/index.ts",
     "dev": "tsc && nodemon dist/index.js",
-    "stage": "tsc && git status && git add ."
+    "stage": "tsc && git status && git add .",
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "build:vercel": "npm run clean && npm run build"
   },
   "keywords": [],
   "author": "",
