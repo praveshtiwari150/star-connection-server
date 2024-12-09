@@ -20,6 +20,8 @@ interface Session {
 
 const app = express();
 
+console.log("test server");
+
 app.use(express.json());
 app.use(cors({
     origin: process.env.CLIENT_URL

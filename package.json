@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node dist/index.js",
-    "dev": "tsc && nodemon dist/index.js"
+    "dev": "tsc && nodemon dist/index.js",
+    "stage": "tsc && git status && git add ."
   },
   "keywords": [],
   "author": "",
